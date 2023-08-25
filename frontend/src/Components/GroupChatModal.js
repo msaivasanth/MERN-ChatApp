@@ -58,7 +58,7 @@ const GroupChatModal = ({children}) => {
         }
 
         try {
-            const result = await fetch(`hhttps://talk-a-tive-je3r.onrender.com/api/chat/createGroupChat`, {
+            const result = await fetch(`https://talk-a-tive-je3r.onrender.com/api/chat/createGroupChat`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
