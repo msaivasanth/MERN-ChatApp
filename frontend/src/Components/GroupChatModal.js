@@ -22,7 +22,7 @@ const GroupChatModal = ({children}) => {
         try {
             setLoading(true)
             // url = http://localhost:5000
-            const result = await fetch(`http://localhost:5000/api/user/fetchUsers?search=${search}`, {
+            const result = await fetch(`https://talk-a-tive-je3r.onrender.com/api/user/fetchUsers?search=${search}`, {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",
@@ -58,7 +58,7 @@ const GroupChatModal = ({children}) => {
         }
 
         try {
-            const result = await fetch(`http://localhost:5000/api/chat/createGroupChat`, {
+            const result = await fetch(`hhttps://talk-a-tive-je3r.onrender.com/api/chat/createGroupChat`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
