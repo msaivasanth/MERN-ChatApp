@@ -44,7 +44,7 @@ const UpdateGroupChatModel = ({ fetchAgain, setFetchAgain, fetchAllMessages }) =
         
         try {
             setLoading(true)
-            const result = await fetch('http://localhost:5000/api/chat/addToGroup', {
+            const result = await fetch('https://talk-a-tive-je3r.onrender.com/api/chat/addToGroup', {
                 method: 'PUT',
                 headers: {
                     "Content-Type": "application/json",
@@ -87,7 +87,7 @@ const UpdateGroupChatModel = ({ fetchAgain, setFetchAgain, fetchAllMessages }) =
 
         try {
             setLoading(true)
-            const result = await fetch('http://localhost:5000/api/chat/removeFromGroup', {
+            const result = await fetch('https://talk-a-tive-je3r.onrender.com/api/chat/removeFromGroup', {
                 method: 'PUT',
                 headers: {
                     "Content-Type": "application/json",
@@ -114,7 +114,7 @@ const UpdateGroupChatModel = ({ fetchAgain, setFetchAgain, fetchAllMessages }) =
 
         try {
             setRenameLoading(true)
-            const result = await fetch('http://localhost:5000/api/chat/renameGroupChat', {
+            const result = await fetch('https://talk-a-tive-je3r.onrender.com/api/chat/renameGroupChat', {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",
@@ -149,7 +149,7 @@ const UpdateGroupChatModel = ({ fetchAgain, setFetchAgain, fetchAllMessages }) =
         
         try {
             setLoading(true)
-            const result = await fetch(`http://localhost:5000/api/user/fetchUsers?search=${search}`, {
+            const result = await fetch(`https://talk-a-tive-je3r.onrender.com/api/user/fetchUsers?search=${search}`, {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",
