@@ -12,7 +12,7 @@ const MyChats = ({fetchAgain}) => {
   
   const fetchChats = async () => {
     try {
-      const result = await fetch(`http://localhost:5000/api/chat/fetchChats`, {
+      const result = await fetch(`https://talk-a-tive-je3r.onrender.com/api/chat/fetchChats`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
