@@ -67,7 +67,7 @@ const SingleChat = ({fetchAgain, setFetchAgain}) => {
             try {
                 // setLoading(true)
                 setNewMessage('')
-                const result = await fetch('http://localhost:5000/api/message/sendMessage', {
+                const result = await fetch('https://talk-a-tive-je3r.onrender.com/api/message/sendMessage', {
                     method: 'POST',
                     headers: {
                         "Content-Type": "application/json",
