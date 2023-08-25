@@ -10,7 +10,7 @@ const ChatState = (props) => {
     const [loggedUser, setLoggedUser] = useState()
 
     const getUserDetails = async () => {
-        const data = await fetch('http://localhost:5000/api/user/getuser', {
+        const data = await fetch('https://talk-a-tive-je3r.onrender.com/api/user/getuser', {
             method: 'GET',
             headers: {
                 "Content-Type": "application/json",
