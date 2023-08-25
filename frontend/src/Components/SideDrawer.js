@@ -39,7 +39,7 @@ const SideDrawer = () => {
         }
 
         try {
-            const result = await fetch(`http://localhost:5000/api/user/fetchUsers?search=${search}`, {
+            const result = await fetch(`https://talk-a-tive-je3r.onrender.com/api/user/fetchUsers?search=${search}`, {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",
@@ -68,7 +68,7 @@ const SideDrawer = () => {
     const accessChat = async (userId) => {
         try {
             setLoadingChat(true)
-            const result = await fetch(`http://localhost:5000/api/chat/accessChat/${userId}`, {
+            const result = await fetch(`https://talk-a-tive-je3r.onrender.com/api/chat/accessChat/${userId}`, {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/json",
