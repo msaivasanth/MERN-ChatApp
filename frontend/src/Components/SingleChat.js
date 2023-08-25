@@ -11,7 +11,7 @@ import io from 'socket.io-client'
 import Lottie from 'react-lottie'
 import animationData from '../animation/typing.json'
 
-const ENDPOINT = 'http://localhost:5000'
+const ENDPOINT = 'https://talk-a-tive-je3r.onrender.com'
 var socket, selectedChatCompare;
 
 const SingleChat = ({fetchAgain, setFetchAgain}) => {
@@ -33,7 +33,7 @@ const SingleChat = ({fetchAgain, setFetchAgain}) => {
 
         try {
             setLoading(true)
-            const result = await fetch(`http://localhost:5000/api/message/allMessages/${selectedChat._id}`, {
+            const result = await fetch(`https://talk-a-tive-je3r.onrender.com/api/message/allMessages/${selectedChat._id}`, {
                 method: 'GET',
                 headers: {
                     "Content-Type": "application/json",
