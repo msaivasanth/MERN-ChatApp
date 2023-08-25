@@ -86,7 +86,7 @@ const SignUp = () => {
         })
         return ;
       }
-      const response = await fetch("https://chat-app-backend-black.vercel.app/api/user/createUser", {
+      const response = await fetch("https://talk-a-tive-je3r.onrender.com/api/user/createUser", {
           method: "POST",
           headers: {
               "Content-Type": "application/json",
