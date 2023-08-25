@@ -12,9 +12,9 @@ connectToMongo()
 app.use(cors())
 app.use(express.json())
 
-app.get('/', (req, res) => {
-    res.send("hello world")
-})
+// app.get('/', (req, res) => {
+//     res.send("hello world")
+// })
 
 app.use('/api/user', require('./routes/user'))
 app.use('/api/chat', require('./routes/chats'))
