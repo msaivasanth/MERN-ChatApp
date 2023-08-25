@@ -2,6 +2,7 @@ const express = require('express')
 const dotenv = require('dotenv')
 const connectToMongo = require('./db')
 const cors = require('cors')
+const path = require('path')
 
 const app = express()
 dotenv.config();
